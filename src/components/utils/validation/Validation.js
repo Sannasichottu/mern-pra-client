@@ -9,7 +9,6 @@ export const isEmail = email => {
     return re.test(email);
 }
 
-
 export const isLength = password => {
     if(password.length < 6) return true
     return false

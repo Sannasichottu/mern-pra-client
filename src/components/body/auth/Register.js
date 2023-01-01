@@ -40,7 +40,7 @@ function Register() {
             return setUser({...user, err: "Password did not match.", success: ''})
 
         try {
-            const res = await axios.post(`http://localhost:3001/user/register`, {
+            const res = await axios.post('http://localhost:3001/user/register', {
                 name, email, password
             })
 
@@ -52,7 +52,7 @@ function Register() {
     }
 
     return (
-        <div className="login-page">
+        <div className="login_page">
             <h2>Register</h2>
             {err && showErrMsg(err)}
             {success && showSuccessMsg(success)}
